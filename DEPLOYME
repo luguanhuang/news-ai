@@ -1,0 +1,3 @@
+修改config.ini文件中的轮询间隔
+使用命令执行
+python3 newsai_info.py

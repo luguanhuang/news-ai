@@ -1,0 +1,7 @@
+requests
+redis
+hiredis
+flask_basicauth
+pymysql
+beautifulsoup4
+cchardet

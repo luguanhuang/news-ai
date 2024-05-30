@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  crawler-news-ai-01:
+    image: feilong/crawler-news-ai
+    container_name: crawler-news-ai-01
+    environment:
+      appType: "github"
+      userName: "admin"
+      redisHost: ${redis_host}
+      passWord: "Ai_Service_2022"
+      isNotify: "True"
+      interval: 21600
+      maxCount: 100
+      sourceTag: "news-ai"
+      sourceData: "none"
+      sortBy: "date"
+    logging:
+      options:
+        max-size: 10m
